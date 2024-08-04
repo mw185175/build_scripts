@@ -28,13 +28,6 @@ git cherry-pick 022c468
 cd ../../..
 echo "===== Cherry-pick Ended ====="
 
-# keys
-rm -rf vendor/lineage-priv
-git clone https://github.com/Phantm7/build_keys.git -b lin-keys vendor/lineage-priv
-echo "============="
-echo "Keys copied"
-echo "============="
-
 # Remove overrides
 # Define a list of packages to remove
 echo "===== Remove overrides started ====="
