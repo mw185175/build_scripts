@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests_clo -b udc-2-rising .repo/local_manifests
+git clone https://github.com/Trijal08/local_manifests -b RisingOS-4.x .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -46,7 +46,7 @@ done
 echo "===== Remove overrides Success ====="
 
 # Export
-export BUILD_USERNAME=FARHAN
+export BUILD_USERNAME=GamerBoy1234•RisingToSuccess
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
@@ -55,5 +55,10 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-riseup mi439 userdebug
+gk -s
+riseup Mi439_4_19 userdebug
+make installclean
+cd kernel/xiaomi/mithorium-4.19/kernel
+curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
+croot
 rise b
