@@ -48,7 +48,6 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-gk -s
 riseup Mi439_4_19 userdebug
 make installclean
 cd kernel/xiaomi/mithorium-4.19/kernel
