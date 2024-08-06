@@ -41,6 +41,7 @@ echo "===== Remove overrides Success ====="
 # Export
 export BUILD_USERNAME=GamerBoy1234•RisingToSuccess
 export BUILD_HOSTNAME=crave
+export MITHORIUM_QCOM_HALS_DEFAULT_VARIANT=LA.UM.9.6.4.r1-05500-89xx.QSSI13.0
 echo "======= Export Done ======"
 
 # Set up build environment
@@ -48,7 +49,7 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-riseup Mi439_4_19 userdebug
+riseup Mi439 userdebug
 make installclean
 cd kernel/xiaomi/lolz-4.19/kernel
 curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
