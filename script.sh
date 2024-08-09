@@ -27,7 +27,7 @@ export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
 # Set up build environment
-. build/envsetup.sh && gk -s
+. build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
