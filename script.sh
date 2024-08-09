@@ -20,28 +20,10 @@ echo "============="
 echo "Sync success"
 echo "============="
 
-echo "===== Cherry-pick stuff started ====="
-cd packages/apps/Updater
-git fetch rising --unshallow
-git fetch https://github.com/Phantm7/android_packages_apps_Updater fourteen
-git cherry-pick 022c468
-cd ../../..
-echo "===== Cherry-pick Ended ====="
-
-# Remove overrides
-# Define a list of packages to remove
-echo "===== Remove overrides started ====="
-
-OVER_PACKAGES=("GoogleContacts" "GoogleDialer" "PrebuiltBugle" "dialer")
-for PACKAGEU in "${OVER_PACKAGES[@]}"; do
-find vendor/gms -name 'common-vendor.mk' -exec sed -i "/$PACKAGEU/d" {} \;
-done
-echo "===== Remove overrides Success ====="
 
 # Export
 export BUILD_USERNAME=GamerBoy1234•RisingToSuccess
 export BUILD_HOSTNAME=crave
-export MITHORIUM_QCOM_HALS_DEFAULT_VARIANT=LA.UM.9.6.4.r1-05500-89xx.QSSI13.0
 echo "======= Export Done ======"
 
 # Set up build environment
@@ -51,7 +33,4 @@ echo "====== Envsetup Done ======="
 # Lunch
 riseup Mi439_4_19 userdebug
 make installclean
-cd kernel/xiaomi/mithorium-4.19/kernel
-curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
-croot
 rise b
