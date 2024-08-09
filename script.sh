@@ -27,10 +27,12 @@ export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
 # Set up build environment
-source build/envsetup.sh
+. build/envsetup.sh && gk -s
 echo "====== Envsetup Done ======="
 
 # Lunch
 riseup Mi439_4_19 userdebug
-make installclean
+echo "============="
+
+# Build rom
 rise b
