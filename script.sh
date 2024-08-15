@@ -32,6 +32,7 @@ echo "====== Envsetup Done ======="
 
 # Lunch
 riseup Mi439_4_19 userdebug
+make installclean
 echo "============="
 
 # Build rom
