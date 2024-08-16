@@ -53,7 +53,4 @@ make installclean
 echo "============="
 
 # Build rom
-cd kernel/xiaomi/mithorium-4.19/kernel
-curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
-croot
 rise b
