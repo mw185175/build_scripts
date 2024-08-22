@@ -3,13 +3,13 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/RisingTechOSS/android -b fourteen --git-lfs
+repo init -u https://github.com/sigmadroid-project/manifest -b sigma-14.3 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Trijal08/local_manifests -b RisingOS-4.x .repo/local_manifests
+git clone https://github.com/Trijal08/local_manifests -b SigmaDroid-14 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
