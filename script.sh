@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/sigmadroid-project/manifest -b sigma-14.3 --git-lfs
+repo init -u https://github.com/sigmadroid-project/manifest.git -b sigma-14.3 --git-lfs --depth=1
 echo "=================="
 echo "Repo init success"
 echo "=================="
