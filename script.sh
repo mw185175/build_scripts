@@ -20,14 +20,6 @@ echo "============="
 echo "Sync success"
 echo "============="
 
-echo "===== Cherry-pick stuff started ====="
-cd packages/apps/Updater
-git fetch rising --unshallow
-git fetch https://github.com/Phantm7/android_packages_apps_Updater fourteen
-git cherry-pick 022c468
-cd ../../..
-echo "===== Cherry-pick Ended ====="
-
 # Remove overrides
 # Define a list of packages to remove
 echo "===== Remove overrides started ====="
