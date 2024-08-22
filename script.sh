@@ -39,7 +39,7 @@ done
 echo "===== Remove overrides Success ====="
 
 # Export
-export BUILD_USERNAME=GamerBoy1234•RisingToSuccess
+export BUILD_USERNAME=GamerBoy1234•BecomingTooSigma
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
@@ -48,9 +48,9 @@ echo "======= Export Done ======"
 echo "====== Envsetup Done ======="
 
 # Lunch
-riseup Mi439_4_19 userdebug
+lunch sigma_Mi439_4_19-qp2a-userdebug
 make installclean
 echo "============="
 
-# Build rom
-rise b
+# Build ROM
+make bacon
