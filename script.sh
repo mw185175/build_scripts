@@ -40,7 +40,7 @@ echo "======= Export Done ======"
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch sigma_Mi439_4_19-qp2a-userdebug
+lunch sigma_Mi439_4_19-ap2a-userdebug
 make installclean
 echo "============="
 
