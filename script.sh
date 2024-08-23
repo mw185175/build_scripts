@@ -40,9 +40,9 @@ echo "======= Export Done ======"
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch sigma_Mi439_4_19-ap2a-userdebug
+breakfast sigma_Mi439_4_19 userdebug
 make installclean
 echo "============="
 
 # Build ROM
-make bacon
+brunch Mi439_4_19
