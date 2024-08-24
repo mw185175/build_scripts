@@ -20,6 +20,9 @@ echo "============="
 echo "Sync success"
 echo "============="
 
+# Private keys
+git clone https://github.com/Trijal08/vendor_lineage-priv_keys.git vendor/lineage-priv/keys
+
 # Remove overrides
 # Define a list of packages to remove
 echo "===== Remove overrides started ====="
