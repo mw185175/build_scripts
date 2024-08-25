@@ -23,16 +23,6 @@ echo "============="
 # Private keys
 git clone https://github.com/Trijal08/vendor_lineage-priv_keys.git vendor/lineage-priv/keys
 
-# Remove overrides
-# Define a list of packages to remove
-echo "===== Remove overrides started ====="
-
-OVER_PACKAGES=("GoogleContacts" "GoogleDialer" "PrebuiltBugle" "dialer")
-for PACKAGEU in "${OVER_PACKAGES[@]}"; do
-find vendor/gms -name 'common-vendor.mk' -exec sed -i "/$PACKAGEU/d" {} \;
-done
-echo "===== Remove overrides Success ====="
-
 # Export
 export BUILD_USERNAME=GamerBoy1234•BecomingTooSigma
 export BUILD_HOSTNAME=crave
