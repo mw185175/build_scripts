@@ -20,6 +20,10 @@ echo "============="
 echo "Sync success"
 echo "============="
 
+# Use AOSP clang for no errors
+rm -r prebuilts/clang/host/linux-x86
+git clone https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86 prebuilts/clang/host/linux-x86
+
 # Private keys
 git clone https://github.com/Trijal08/vendor_lineage-priv_keys.git vendor/lineage-priv/keys
 
