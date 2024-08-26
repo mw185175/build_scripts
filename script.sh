@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Trijal08/local_manifests -b SigmaDroid-14 .repo/local_manifests
+git clone https://github.com/Trijal08/local_manifests -b SigmaDroid-14 --depth=1 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -22,7 +22,7 @@ echo "============="
 
 # Use AOSP clang for no errors
 rm -r prebuilts/clang/host/linux-x86
-git clone https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86 --depth 1 prebuilts/clang/host/linux-x86
+git clone https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86 --depth=1 prebuilts/clang/host/linux-x86
 
 # Private keys
 git clone https://github.com/Trijal08/vendor_lineage-priv_keys.git vendor/lineage-priv/keys
