@@ -20,6 +20,11 @@ echo "============="
 echo "Sync success"
 echo "============="
 
+# Private keys
+git clone https://github.com/Gtajisan/vendor_lineage-priv_keys.git vendor/lineage-priv/keys
+echo "===== cp clone done ====="
+
+
 # Export
 export BUILD_USERNAME=FARHAN_UN
 export BUILD_HOSTNAME=crave
