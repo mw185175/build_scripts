@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/ProjectMatrixx/android.git -b 14.0 --git-lfs
+repo init -u https://github.com/TenX-OS/manifest.git -b fourteen --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
