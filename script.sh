@@ -28,6 +28,9 @@ git cherry-pick 198966577ace63573e5be49e03a2e59e32997054
 cd ../..
 echo "===== Cherry-picking Success ====="
 
+# Set up build environment
+. build/envsetup.sh 
+echo "====== Envsetup Done ======="
 
 # Export
 export BUILD_USERNAME=FARHAN_UN
