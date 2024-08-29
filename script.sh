@@ -38,8 +38,6 @@ export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
 # Lunch  
-. build/envsetup.sh
-brunch Mi439_4_19 
 brunch Mi439_4_19 userdebug
 
 
