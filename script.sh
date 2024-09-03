@@ -20,21 +20,10 @@ echo "============="
 echo "Sync success"
 echo "============="
 
-# Git cherry-pick
-cd vendor/lineage
-git remote add los https://github.com/LineageOS/android_vendor_lineage
-git fetch los
-git cherry-pick 198966577ace63573e5be49e03a2e59e32997054
-cd ../..
-echo "===== Cherry-picking Success ====="
-
-# Set up build environment
-. build/envsetup.sh 
-echo "====== Envsetup Done ======="
-
 # Export
 export BUILD_USERNAME=FARHAN_UN
 export BUILD_HOSTNAME=crave
+export MITHORIUM_QCOM_HALS_DEFAULT_VARIANT=LA.UM.9.6.4.r1-05500-89xx.QSSI13.0
 echo "======= Export Done ======"
 
 # Lunch  
