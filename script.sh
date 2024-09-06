@@ -37,7 +37,8 @@ echo "======= Export Done ======"
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
-# Lunch  
+# Lunch 
+brunch mi439
 brunch mi439 userdebug
 
 
