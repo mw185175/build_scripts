@@ -42,5 +42,8 @@ echo "====== Envsetup Done ======="
 
 # Lunch 
 breakfast mi439
+make installclean
+
+# Build
 croot
 brunch mi439 userdebug
