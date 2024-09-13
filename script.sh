@@ -36,18 +36,33 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Clone trees
-breakfast husky
 rm -rf device/google/shusky
 rm -rf device/google/zuma
+rm -rf device/google/gs-common
 rm -rf device/google/gs101
 git clone --depth=1 https://github.com/Trijal08/android_device_google_shusky.git -b TenX-OS device/google/shusky
 git clone --depth=1 https://github.com/austineyoung2000/android_device_google_zuma.git -b RisingOS-4.x device/google/zuma
+git clone --depth=1 https://github.com/LineageOS/android_device_google_gs-common.git device/google/gs-common
 git clone --depth=1 https://github.com/Jrcable1/android_device_google_gs101.git device/google/gs101
 git clone --depth=1 https://github.com/austineyoung2000/packages_apps_PixelParts.git packages/apps/PixelParts
 git clone --depth=1 https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git packages/apps/ViPER4AndroidFX
 git clone --depth=1 https://github.com/austineyoung2000/android_vendor_google_faceunlock.git vendor/google/faceunlock
 git clone --depth=1 https://github.com/ashoss/vendor_bcr.git vendor/bcr
-git lfs clone --depth=1 https://github.com/austineyoung2000/proprietary_vendor_google_husky.git -b RisingOS vendor/google/husky
+git lfs clone https://github.com/austineyoung2000/proprietary_vendor_google_husky.git -b RisingOS vendor/google/husky
+breakfast husky
+rm -rf device/google/shusky
+rm -rf device/google/zuma
+rm -rf device/google/gs-common
+rm -rf device/google/gs101
+git clone --depth=1 https://github.com/Trijal08/android_device_google_shusky.git -b TenX-OS device/google/shusky
+git clone --depth=1 https://github.com/austineyoung2000/android_device_google_zuma.git -b RisingOS-4.x device/google/zuma
+git clone --depth=1 https://github.com/LineageOS/android_device_google_gs-common.git device/google/gs-common
+git clone --depth=1 https://github.com/Jrcable1/android_device_google_gs101.git device/google/gs101
+git clone --depth=1 https://github.com/austineyoung2000/packages_apps_PixelParts.git packages/apps/PixelParts
+git clone --depth=1 https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git packages/apps/ViPER4AndroidFX
+git clone --depth=1 https://github.com/austineyoung2000/android_vendor_google_faceunlock.git vendor/google/faceunlock
+git clone --depth=1 https://github.com/ashoss/vendor_bcr.git vendor/bcr
+git lfs clone https://github.com/austineyoung2000/proprietary_vendor_google_husky.git -b RisingOS vendor/google/husky
 echo "====== Cloning device trees done ======"
 
 # Lunch
