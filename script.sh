@@ -28,6 +28,9 @@ git cherry-pick 198966577ace63573e5be49e03a2e59e32997054
 cd ../..
 echo "===== Cherry-picking Success ====="
 
+# Remove GMS/GApps to prevent ROM size issues
+rm -rf vendor/gms
+
 # Private keys
 git clone https://github.com/Trijal08/vendor_lineage-priv_keys.git vendor/lineage-priv/keys
 
