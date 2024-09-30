@@ -36,8 +36,8 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch lineage_husky-ap2a-userdebug
-lunch lineage_husky-userdebug
+lunch pixelstar_husky-ap2a-userdebug
+lunch pixelstar_husky-userdebug
 make installclean -j$(nproc --all)
 echo "============="
 
