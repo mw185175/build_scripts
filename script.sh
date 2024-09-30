@@ -36,10 +36,11 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-breakfast pixelstar_husky-userdebug
+lunch lineage_husky-ap2a-userdebug
+lunch lineage_husky-userdebug
 make installclean -j$(nproc --all)
 echo "============="
 
 # Build ROM
 croot
-brunch pixelstar_husky-userdebug -j$(nproc --all)
+mka bacon -j$(nproc --all)
