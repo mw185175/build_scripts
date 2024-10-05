@@ -15,7 +15,7 @@ echo "# set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi" | tee -a ~/.profile | tee -a ~/.bashrc
-source ~/.profile || source ~/.bashrc
+source ~/.profile
 git config --global user.email "trijalsaha2012@gmail.com"
 git config --global user.name "Trijal Saha"
 git config --global trailer.changeid.key "Change-Id"
