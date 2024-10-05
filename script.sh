@@ -42,4 +42,4 @@ echo "============="
 
 # Build ROM
 croot
-brunch husky -j$(nproc --all)
+brunch husky
