@@ -39,9 +39,11 @@ echo "====== Envsetup Done ======="
 
 # Lunch
 breakfast husky
+breakfast shiba
 make installclean -j$(nproc --all)
 echo "============="
 
 # Build ROM
 croot
 brunch husky
+brunch shiba
