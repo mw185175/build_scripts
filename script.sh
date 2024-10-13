@@ -13,7 +13,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Trijal08/local_manifests -b Orion_OS-shusky --depth=1 .repo/local_manifests
+git clone https://github.com/Trijal08/local_manifests_clo -b Orion_OS-mi439 --depth=1 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -38,12 +38,10 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-breakfast husky
-breakfast shiba
+breakfast mi439
 make installclean -j$(nproc --all)
 echo "============="
 
 # Build ROM
 croot
-brunch husky
-brunch shiba
+brunch mi439
