@@ -27,8 +27,9 @@ echo "============="
 # Using PixelStar GMS, need mods
 rm -rf vendor/gapps
 git clone https://gitlab.com/RisingTechOSS/android_vendor_gms.git -b fourteen vendor/gapps
-sed -i 's/vendor\/gms/vendor\/gapps/g' vendor/gapps/products/*
-sed -i 's/vendor\/gms/vendor\/gapps/g' vendor/gapps/common/*
+sed -i 's/vendor\/gms/vendor\/gapps/g' vendor/gapps/*.*
+sed -i 's/vendor\/gms/vendor\/gapps/g' vendor/gapps/common/*.*
+sed -i 's/vendor\/gms/vendor\/gapps/g' vendor/gapps/products/*.*
 
 # Private keys
 git clone https://github.com/Trijal08/vendor_lineage-priv_keys.git vendor/lineage-priv/keys
