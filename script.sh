@@ -8,9 +8,9 @@ git lfs install
 
 # repo init manifest
 repo init -u https://github.com/Trijal08/orion_manifest -b 14.0 --git-lfs --depth=1
-echo "=================="
-echo "Repo init success"
-echo "=================="
+echo "====================="
+echo "= Repo init success ="
+echo "====================="
 
 # Local manifests
 git clone https://github.com/Trijal08/local_manifests -b Orion_OS-shusky --depth=1 .repo/local_manifests
@@ -20,16 +20,28 @@ echo "============================"
 
 # Sync
 /opt/crave/resync.sh || repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
-echo "============="
-echo "Sync success"
-echo "============="
+echo "================"
+echo "= Sync success ="
+echo "================"
 
-# Using PixelStar GMS, need mods
+# Using RisingOS GMS, need mods
 rm -rf vendor/gapps
 git clone https://gitlab.com/RisingTechOSS/android_vendor_gms.git -b fourteen vendor/gapps
 sed -i 's/vendor\/gms/vendor\/gapps/g' vendor/gapps/*.*
 sed -i 's/vendor\/gms/vendor\/gapps/g' vendor/gapps/common/*.*
 sed -i 's/vendor\/gms/vendor\/gapps/g' vendor/gapps/products/*.*
+echo "============================="
+echo "= GMS/GApps setup succeeded ="
+echo "============================="
+
+# Kernel submodules setup
+cd kernel/google/zuma
+git submodule init
+git submodule update
+cd ../../..
+echo "=========================="
+echo "= Kernel setup succeeded ="
+echo "=========================="
 
 # Private keys
 git clone https://github.com/Trijal08/vendor_lineage-priv_keys.git vendor/lineage-priv/keys
