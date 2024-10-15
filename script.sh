@@ -36,10 +36,11 @@ echo "============================="
 echo "= GMS/GApps setup succeeded ="
 echo "============================="
 
-# Kernel submodules setup
+# Kernel setup
 cd kernel/google/zuma
 git submodule init
 git submodule update
+rm -rf scripts/dtc-aosp/dtc scripts/libufdt
 cd ../../..
 echo "=========================="
 echo "= Kernel setup succeeded ="
