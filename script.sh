@@ -36,7 +36,7 @@ echo "============================="
 
 # Kernel setup
 rm -rf kernel/google/zuma
-git clone https://github.com/0ctobot/neutrino_kernel_google_zuma.git -b android15-qpr1-beta/neutrino-google-zuma-5.15 kernel/google/zuma
+git clone https://github.com/0ctobot/neutrino_kernel_google_zuma.git -b android15-qpr1-beta/neutrino-google-zuma-5.15-pwm kernel/google/zuma
 cd kernel/google/zuma
 git submodule init
 git submodule update
