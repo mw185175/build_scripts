@@ -30,8 +30,6 @@ git clone https://gitlab.com/RisingTechOSS/android_vendor_gms.git -b fourteen ve
 sed -i 's/vendor\/gms/vendor\/gapps/g' vendor/gapps/*.*
 sed -i 's/vendor\/gms/vendor\/gapps/g' vendor/gapps/common/*.*
 sed -i 's/vendor\/gms/vendor\/gapps/g' vendor/gapps/products/*.*
-source vendor/gapps/*.sh*
-rm -rf vendor/gms
 echo "============================="
 echo "= GMS/GApps setup succeeded ="
 echo "============================="
@@ -57,6 +55,8 @@ echo "======= Export Done ======"
 
 # Set up build environment
 source build/envsetup.sh
+source vendor/gapps/*.sh*
+rm -rf vendor/gms
 echo "====== Envsetup Done ======="
 
 # Lunch
