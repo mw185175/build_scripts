@@ -42,6 +42,7 @@ git submodule init
 git submodule update
 rm -rf scripts/dtc-aosp/dtc scripts/libufdt
 cd ../../..
+rm -rf system/extras/su
 echo "=========================="
 echo "= Kernel setup succeeded ="
 echo "=========================="
