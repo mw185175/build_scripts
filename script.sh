@@ -34,19 +34,6 @@ echo "============================="
 echo "= GMS/GApps setup succeeded ="
 echo "============================="
 
-# Kernel setup
-rm -rf kernel/google/zuma
-git clone https://github.com/Trijal08/neutrino_kernel_google_zuma.git -b android15-qpr1-beta/neutrino-google-zuma-5.15-pwm kernel/google/zuma
-cd kernel/google/zuma
-git submodule init
-git submodule update
-rm -rf scripts/dtc-aosp/dtc scripts/libufdt
-cd ../../..
-rm -rf system/extras/su
-echo "=========================="
-echo "= Kernel setup succeeded ="
-echo "=========================="
-
 # Private keys
 git clone https://github.com/Trijal08/vendor_lineage-priv_keys.git vendor/lineage-priv/keys
 
