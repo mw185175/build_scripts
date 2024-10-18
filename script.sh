@@ -7,13 +7,13 @@ rm -rf .repo/local_manifests/
 git lfs install
 
 # repo init manifest
-repo init -u https://github.com/LineageOS/android.git -b lineage-22.0 --git-lfs --depth=1
+repo init -u https://github.com/ProjectBlaze/manifest.git -b 15 --git-lfs --depth=1
 echo "====================="
 echo "= Repo init success ="
 echo "====================="
 
 # Local manifests
-git clone https://github.com/Trijal08/local_manifests -b LOS22.0-15-shusky --depth=1 .repo/local_manifests
+git clone https://github.com/Trijal08/local_manifests -b ProjectBlaze-15-shusky --depth=1 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -28,7 +28,7 @@ echo "================"
 git clone https://github.com/Trijal08/vendor_lineage-priv_keys.git vendor/lineage-priv/keys
 
 # Export
-export BUILD_USERNAME="GamerBoy1234294 • OrionStarsInTheSky"
+export BUILD_USERNAME="GamerBoy1234294 • BlazingAndWorthGlazing"
 export BUILD_HOSTNAME="crave"
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 echo "======= Export Done ======"
