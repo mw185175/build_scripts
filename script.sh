@@ -37,13 +37,12 @@ echo "======= Export Done ======"
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
-# Lunch
-breakfast husky
-breakfast shiba
+# Lunch and build
+lunch aosp_husky-ap3a-userdebug
+croot
+mka bacon
+lunch aosp_shiba-ap3a-userdebug
+croot
+mka bacon
 make installclean -j$(nproc --all)
 echo "============="
-
-# Build ROM
-croot
-brunch husky
-brunch shiba
