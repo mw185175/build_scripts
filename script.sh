@@ -7,13 +7,13 @@ rm -rf .repo/local_manifests/
 git lfs install
 
 # repo init manifest
-repo init -u https://github.com/Trijal08/orion_manifest -b 14.0 --git-lfs --depth=1
+repo init -u https://github.com/Evolution-X/manifest.git -b vic --git-lfs --depth=1
 echo "====================="
 echo "= Repo init success ="
 echo "====================="
 
 # Local manifests
-git clone https://github.com/Trijal08/local_manifests -b Orion_OS-shusky --depth=1 .repo/local_manifests
+git clone https://github.com/Trijal08/local_manifests -b EvoX-15-shusky --depth=1 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
