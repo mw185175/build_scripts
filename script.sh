@@ -24,16 +24,6 @@ echo "================"
 echo "= Sync success ="
 echo "================"
 
-# Using RisingOS GMS, need mods
-rm -rf vendor/gapps
-git clone https://gitlab.com/RisingTechOSS/android_vendor_gms.git -b fourteen vendor/gapps
-sed -i 's/vendor\/gms/vendor\/gapps/g' vendor/gapps/*.*
-sed -i 's/vendor\/gms/vendor\/gapps/g' vendor/gapps/common/*.*
-sed -i 's/vendor\/gms/vendor\/gapps/g' vendor/gapps/products/*.*
-echo "============================="
-echo "= GMS/GApps setup succeeded ="
-echo "============================="
-
 # Private keys
 git clone https://github.com/Trijal08/vendor_lineage-priv_keys.git vendor/lineage-priv/keys
 
@@ -45,8 +35,6 @@ echo "======= Export Done ======"
 
 # Set up build environment
 source build/envsetup.sh
-source vendor/gapps/*.sh*
-rm -rf vendor/gms
 echo "====== Envsetup Done ======="
 
 # Lunch
