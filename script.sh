@@ -7,7 +7,7 @@ rm -rf .repo/local_manifests/
 git lfs install
 
 # repo init manifest
-repo init -u https://github.com/Trijal08/orion_manifest -b 14.0 --git-lfs --depth=1
+repo init -u https://github.com/OrionOS-prjkt/android -b 14.0 --git-lfs --depth=1
 echo "====================="
 echo "= Repo init success ="
 echo "====================="
@@ -23,16 +23,6 @@ echo "============================"
 echo "================"
 echo "= Sync success ="
 echo "================"
-
-# Using RisingOS GMS, need mods
-rm -rf vendor/gapps
-git clone https://gitlab.com/RisingTechOSS/android_vendor_gms.git -b fourteen vendor/gapps
-sed -i 's/vendor\/gms/vendor\/gapps/g' vendor/gapps/*.*
-sed -i 's/vendor\/gms/vendor\/gapps/g' vendor/gapps/common/*.*
-sed -i 's/vendor\/gms/vendor\/gapps/g' vendor/gapps/products/*.*
-echo "============================="
-echo "= GMS/GApps setup succeeded ="
-echo "============================="
 
 # Private keys
 git clone https://github.com/Trijal08/vendor_lineage-priv_keys.git vendor/lineage-priv/keys
