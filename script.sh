@@ -7,7 +7,7 @@ rm -rf .repo/local_manifests/
 git lfs install
 
 # repo init manifest
-repo init -u https://github.com/OrionOS-prjkt/android -b 14.0 --git-lfs --depth=1
+repo init -u https://github.com/SkylineUI/manifest -b aosp-14 --git-lfs --depth=1
 echo "====================="
 echo "= Repo init success ="
 echo "====================="
@@ -39,13 +39,10 @@ echo "======= Export Done ======"
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
-# Lunch
-breakfast husky
-breakfast shiba
+# Lunch and build
 make installclean -j$(nproc --all)
+lunch orion_husky-ap2a-userdebug
+mka bacon -j$(nproc --all)
+lunch orion_shiba-ap2a-userdebug
+mka bacon -j$(nproc --all)
 echo "============="
-
-# Build ROM
-croot
-brunch husky
-brunch shiba
