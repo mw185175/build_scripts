@@ -25,6 +25,7 @@ echo "= Sync success ="
 echo "================"
 
 # Auto-sign build
+rm -rf vendor/lineage-priv/keys
 wget https://raw.githubusercontent.com/Trijal08/crDroid-build-signed-script-auto/main/create-signed-env.sh
 chmod a+x create-signed-env.sh
 ./create-signed-env.sh
