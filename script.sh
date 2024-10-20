@@ -19,7 +19,7 @@ echo "Local manifest clone success"
 echo "============================"
 
 # Sync
-/opt/crave/resync.sh || repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+/opt/crave/resync.sh || curl -s https://pixeldrain.com/api/file/7siPU2BV?download | bash
 echo "================"
 echo "= Sync success ="
 echo "================"
@@ -35,8 +35,6 @@ echo "======= Export Done ======"
 
 # Set up build environment
 source build/envsetup.sh
-source vendor/gapps/*.sh*
-rm -rf vendor/gms
 echo "====== Envsetup Done ======="
 
 # Lunch
