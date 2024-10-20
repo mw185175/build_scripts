@@ -24,8 +24,10 @@ echo "============="
 rm -r prebuilts/clang/host/linux-x86
 git clone https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86 --depth=1 prebuilts/clang/host/linux-x86
 
-# Private keys
-git clone https://github.com/Trijal08/vendor_lineage-priv_keys.git vendor/lineage-priv/keys
+# Auto-sign build
+wget https://raw.githubusercontent.com/Trijal08/crDroid-build-signed-script-auto/main/create-signed-env.sh
+chmod a+x create-signed-env.sh
+./create-signed-env.sh
 
 # Export
 export BUILD_USERNAME=GamerBoy1234•BecomingTooSigma
