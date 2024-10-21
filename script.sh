@@ -43,10 +43,10 @@ echo "====== Envsetup Done ======="
 
 # Lunch and build
 make installclean -j$(nproc --all)
-lunch aosp_husky-ap3a-userdebug
+lunch lineage_husky-ap3a-userdebug
 croot
 mka bacon
-lunch aosp_shiba-ap3a-userdebug
+lunch lineage_shiba-ap3a-userdebug
 croot
 mka bacon
 echo "============="
