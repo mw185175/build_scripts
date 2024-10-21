@@ -42,12 +42,12 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-breakfast husky
-breakfast shiba
+breakfast statix_husky-ap3a-userdebug
+breakfast statix_shiba-ap3a-userdebug
 mka installclean -j$(nproc --all)
 echo "============="
 
 # Build ROM
 croot
-brunch husky
-brunch shiba
+brunch statix_husky-ap3a-userdebug
+brunch statix_shiba-ap3a-userdebug
