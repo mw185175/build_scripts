@@ -7,13 +7,13 @@ rm -rf .repo/local_manifests/
 git lfs install
 
 # repo init manifest
-repo init -u https://github.com/ProjectPixelage/android_manifest.git -b 15 --git-lfs --depth=1
+repo init -u https://github.com/StatiXOS/android_manifest.git -b udc-qpr3 --git-lfs --depth=1
 echo "====================="
 echo "= Repo init success ="
 echo "====================="
 
 # Local manifests
-git clone https://github.com/Trijal08/local_manifests -b ProjectPixelage-15-shusky --depth=1 .repo/local_manifests
+git clone https://github.com/Trijal08/local_manifests -b StatiXOS-15-shusky --depth=1 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -31,7 +31,7 @@ chmod a+x create-signed-env.sh
 ./create-signed-env.sh
 
 # Export
-export BUILD_USERNAME="GamerBoy1234294 • BlazingAndWorthGlazing"
+export BUILD_USERNAME="GamerBoy1234294 • Stati'XElectric"
 export BUILD_HOSTNAME="crave"
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 export PIXELAGE_BUILD="shusky"
