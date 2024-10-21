@@ -7,13 +7,13 @@ rm -rf .repo/local_manifests/
 git lfs install
 
 # repo init manifest
-repo init -u https://github.com/SkylineUI-Reborn/manifest.git -b fourteen --git-lfs --depth=1
+repo init -u https://github.com/SuperiorOS/manifest.git -b fourteen --git-lfs --depth=1
 echo "====================="
 echo "= Repo init success ="
 echo "====================="
 
 # Local manifests
-git clone https://github.com/Trijal08/local_manifests -b Orion_OS-shusky --depth=1 .repo/local_manifests
+git clone https://github.com/Trijal08/local_manifests -b TenX_OS-shusky --depth=1 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -39,10 +39,12 @@ echo "======= Export Done ======"
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
-# Lunch and build
-make installclean -j$(nproc --all)
-lunch orion_husky-ap2a-userdebug
-mka bacon -j$(nproc --all)
-lunch orion_shiba-ap2a-userdebug
-mka bacon -j$(nproc --all)
+# Lunch
+breakfast husky
+breakfast shiba
+mka installclean -j($nproc --all)
 echo "============="
+
+# Build ROM
+croot
+brunch husky
