@@ -48,3 +48,4 @@ echo "============="
 # Build ROM
 croot
 brunch husky
+brunch shiba
