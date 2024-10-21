@@ -44,7 +44,7 @@ echo "====== Envsetup Done ======="
 # Lunch
 breakfast statix_husky-ap3a-userdebug
 breakfast statix_shiba-ap3a-userdebug
-mka installclean -j$(nproc --all)
+make installclean -j$(nproc --all)
 echo "============="
 
 # Build ROM
