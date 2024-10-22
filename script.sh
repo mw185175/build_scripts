@@ -43,7 +43,7 @@ echo "====== Envsetup Done ======="
 # Lunch
 breakfast husky
 breakfast shiba
-mka installclean -j$(nproc --all)
+make installclean -j$(nproc --all)
 echo "============="
 
 # Build ROM
