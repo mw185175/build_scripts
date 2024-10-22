@@ -42,12 +42,5 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-breakfast husky
-breakfast shiba
-make installclean -j$(nproc --all)
+./rom-build.sh husky -z -s vendor/lineage-priv/keys
 echo "============="
-
-# Build ROM
-croot
-brunch husky
-brunch shiba
