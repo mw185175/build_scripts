@@ -14,7 +14,7 @@ echo "= Repo init success ="
 echo "====================="
 
 # Local manifests
-git clone https://github.com/mw185175/android_device_google_shusky -b Syberia-shusky --depth=1 .repo/local_manifests
+git clone https://github.com/mw185175/local_manifests.git -b Syberia-shusky --depth=1 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -32,7 +32,7 @@ chmod a+x create-signed-env.sh
 ./create-signed-env.sh
 
 # Export
-export BUILD_USERNAME="GamerBoy1234294 • OrionStarsInTheSky"
+export BUILD_USERNAME="Matthew • OrionStarsInTheSky"
 export BUILD_HOSTNAME="crave"
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 echo "======= Export Done ======"
