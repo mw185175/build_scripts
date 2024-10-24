@@ -41,12 +41,10 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-breakfast husky
-breakfast shiba
 make installclean -j$(nproc --all)
-echo "============="
-
-# Build ROM
+lunch skylineui_husky-ap2a-userdebug
 croot
-brunch husky
-brunch shiba
+make bacon -j$(nproc --all)
+lunch skylineui_husky-ap2a-userdebug
+croot
+make bacon -j$(nproc --all)
