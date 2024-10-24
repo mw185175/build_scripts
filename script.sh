@@ -31,7 +31,7 @@ chmod a+x create-signed-env.sh
 ./create-signed-env.sh
 
 # Export
-export BUILD_USERNAME="GamerBoy1234294 • OrionStarsInTheSky"
+export BUILD_USERNAME="Matthew W. • Touch the Star"
 export BUILD_HOSTNAME="crave"
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 echo "======= Export Done ======"
