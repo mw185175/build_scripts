@@ -16,6 +16,6 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi" | tee -a ~/.profile | tee -a ~/.bashrc
 source ~/.profile
-git config --global user.email "trijalsaha2012@gmail.com"
-git config --global user.name "Trijal Saha"
+git config --global user.email "mw195161@gmail.com"
+git config --global user.name "matthew Witherell"
 git config --global trailer.changeid.key "Change-Id"
