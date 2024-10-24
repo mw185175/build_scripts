@@ -42,9 +42,9 @@ echo "====== Envsetup Done ======="
 
 # Lunch
 make installclean -j$(nproc --all)
-lunch skylineui_husky-ap2a-userdebug
+lunch aosp_husky-ap2a-userdebug
 croot
 make bacon -j$(nproc --all)
-lunch skylineui_husky-ap2a-userdebug
+lunch aosp_husky-ap2a-userdebug
 croot
 make bacon -j$(nproc --all)
