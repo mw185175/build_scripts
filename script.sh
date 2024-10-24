@@ -40,6 +40,8 @@ echo "======= Export Done ======"
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
+# TARGET_RELEASE
+lunch aosp_husky-ap2a-userdebug
 # Lunch
 make installclean -j$(nproc --all)
 lunch aosp_husky-ap2a-userdebug
