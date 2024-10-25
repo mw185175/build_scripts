@@ -7,7 +7,7 @@ rm -rf .repo/local_manifests/
 git lfs install
 
 # repo init manifest
-repo init -u https://github.com/OrionOS-prjkt/android -b 14.0 --git-lfs --depth=1
+repo init --depth=1 -u https://github.com/DroidX-UI/manifest.git -b 14_v3 --git-lfs
 echo "====================="
 echo "= Repo init success ="
 echo "====================="
@@ -31,7 +31,7 @@ chmod a+x create-signed-env.sh
 ./create-signed-env.sh
 
 # Export
-export BUILD_USERNAME="GamerBoy1234294 • OrionStarsInTheSky"
+export BUILD_USERNAME="Matthew W. • Welcome to DroidX-UI"
 export BUILD_HOSTNAME="crave"
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 echo "======= Export Done ======"
