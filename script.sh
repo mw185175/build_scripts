@@ -13,7 +13,7 @@ echo "= Repo init success ="
 echo "====================="
 
 # Local manifests
-git clone https://github.com/mw185175/local_manifests/blob/DroidX-UI/local_manifests.xml -b DroidX_UI-shusky --depth=1 .repo/local_manifests
+git clone https://github.com/mw185175/local_manifests/blob/DroidX-UI/local_manifests.xml -b DroidX-UI-shusky --depth=1 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
