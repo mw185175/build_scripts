@@ -7,13 +7,13 @@ rm -rf .repo/local_manifests/
 git lfs install
 
 # repo init manifest
-repo init -u https://github.com/SuperiorOS/manifest.git -b fourteen --git-lfs
+repo init -u https://github.com/SuperiorOS/manifest.git -b fifteen --git-lfs
 echo "====================="
 echo "= Repo init success ="
 echo "====================="
 
 # Local manifests
-git clone https://github.com/mw185175/local_manifests.git -b SuperiorOS-shusky .repo/local_manifests
+git clone https://github.com/mw185175/local_manifests.git -b SuperiorOS_15-shusky .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
