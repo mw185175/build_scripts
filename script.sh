@@ -13,7 +13,7 @@ echo "= Repo init success ="
 echo "====================="
 
 # Local manifests
-git clone https://github.com/mw185175/local_manifests/blob/SuperiorOS-15-shusky/local_manifests.xml 
+git clone https://github.com/mw185175/local_manifests -b SuperiorOS-15-shusky --depth=1 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
