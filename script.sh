@@ -13,7 +13,7 @@ echo "= Repo init success ="
 echo "====================="
 
 # Local manifests
-git clone https://github.com/mw185175/android_device_google_shusky/tree/SuperiorOS-15-shusky
+git clone https://github.com/mw185175/local_manifests/blob/SuperiorOS-15-shusky/local_manifests.xml 
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
