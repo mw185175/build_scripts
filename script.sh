@@ -41,8 +41,8 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-breakfast husky
-breakfast shiba
+lunch husky
+lunch shiba
 make installclean -j$(nproc --all)
 echo "================"
 
