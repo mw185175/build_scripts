@@ -45,7 +45,7 @@ breakfast husky
 breakfast shiba
 make installclean -j$(nproc --all)
 echo "================"
--include vendor/lineage-priv/keys/keys.mk
+
 # Build ROM
 croot
 brunch husky
