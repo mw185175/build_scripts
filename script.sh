@@ -44,7 +44,6 @@ echo "====== Envsetup Done ======="
 breakfast husky
 breakfast shiba
 make installclean -j$(nproc --all)
-echo "============="
 
 # Build ROM
 croot
