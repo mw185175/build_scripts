@@ -7,7 +7,7 @@ rm -rf .repo/local_manifests/
 git lfs install
 
 # repo init manifest
-repo init -u https://github.com/ProjectBlaze/manifest -b 15 --git-lfs --depth=1 --git-lfs
+repo init -u https://github.com/ProjectBlaze/manifest -b 15 --git-lfs
 echo "====================="
 echo "= Repo init success ="
 echo "====================="
