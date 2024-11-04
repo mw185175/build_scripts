@@ -7,7 +7,7 @@ rm -rf .repo/local_manifests/
 git lfs install
 
 # repo init manifest
-repo init -u https://github.com/VoltageOS/manifest.git -b 15 --git-lfs
+repo init -u https://github.com/VoltageOS/manifest.git -b 15 --depth=1 --git-lfs
 echo "====================="
 echo "= Repo init success ="
 echo "====================="
