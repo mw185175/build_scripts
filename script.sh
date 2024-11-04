@@ -7,13 +7,13 @@ rm -rf .repo/local_manifests/
 git lfs install
 
 # repo init manifest
-repo init -u https://github.com/OrionOS-prjkt/android -b 14.0 --git-lfs --depth=1
+repo init --depth=1 -u https://github.com/ProjectSakura/android.git -b 14 --git-lfs
 echo "====================="
 echo "= Repo init success ="
 echo "====================="
 
 # Local manifests
-git clone https://github.com/Trijal08/local_manifests -b Orion_OS-shusky --depth=1 .repo/local_manifests
+git clone https://github.com/mw185175/local_manifests -b Sakura-14-shusky --depth=1 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -31,7 +31,7 @@ chmod a+x create-signed-env.sh
 ./create-signed-env.sh
 
 # Export
-export BUILD_USERNAME="GamerBoy1234294 • OrionStarsInTheSky"
+export BUILD_USERNAME="Matthew Witherell • feels like spring"
 export BUILD_HOSTNAME="crave"
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 echo "======= Export Done ======"
