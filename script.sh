@@ -7,13 +7,13 @@ rm -rf .repo/local_manifests/
 git lfs install
 
 # repo init manifest
-repo init -u https://github.com/VoltageOS/manifest.git -b 15 --depth=1 --git-lfs
+repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 15 --depth=1 --git-lfs
 echo "====================="
 echo "= Repo init success ="
 echo "====================="
 
 # Local manifests
-git clone https://github.com/mw185175/local_manifests -b VoltageOS-15-shusky --depth=1 .repo/local_manifests
+git clone https://github.com/mw185175/local_manifests -b Derpfest-A15-shusky-shusky --depth=1 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
