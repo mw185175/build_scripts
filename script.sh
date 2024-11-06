@@ -26,12 +26,10 @@ echo "================"
 
 # Auto-sign build
 rm -rf vendor/lineage-priv/keys
-wget https://raw.githubusercontent.com/Trijal08/crDroid-build-signed-script-auto/main/create-signed-env.sh
-chmod a+x create-signed-env.sh
-./create-signed-env.sh
+curl -sSf https://raw.githubusercontent.com/Trijal08/crDroid-build-signed-script-auto/main/create-signed-env.sh | bash
 
 # Export
-export BUILD_USERNAME="Matthew W. 
+export BUILD_USERNAME="Matthew W."
 export BUILD_HOSTNAME="crave"
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 echo "======= Export Done ======"
