@@ -7,13 +7,13 @@ rm -rf .repo/local_manifests/
 git lfs install
 
 # repo init manifest
-repo init -u https://github.com/SuperiorOS/manifest.git -b fifteen --depth=1 --git-lfs
+repo init -u https://github.com/BlissRoms/stable_releases.git -b refs/tags/v18.0-beta.2-voyager --git-lfs
 echo "====================="
 echo "= Repo init success ="
 echo "====================="
 
 # Local manifests
-git clone https://github.com/mw185175/local_manifests -b SuperiorOS-15-shusky --depth=1 .repo/local_manifests
+git clone https://github.com/mw185175/local_manifests -b BlissOS-15-shusky --depth=1 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
