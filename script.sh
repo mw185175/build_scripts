@@ -41,12 +41,12 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch husky
-lunch shiba
+blissify -g -d husky
+blissify -g -d shiba
 make installclean -j$(nproc --all)
 echo "================"
 
 # Build ROM
 croot
-brunch husky
-brunch shiba
+blissify -g -d husky
+blissify -g -d shiba
