@@ -7,7 +7,7 @@ rm -rf .repo/local_manifests/
 git lfs install
 
 # repo init manifest
-repo init -u https://github.com/OrionOS-prjkt/android -b 14.0 --git-lfs --depth=1
+repo init -u https://github.com/SuperiorOS/manifest.git -b fourteen --git-lfs
 echo "====================="
 echo "= Repo init success ="
 echo "====================="
