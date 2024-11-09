@@ -13,7 +13,7 @@ echo "= Repo init success ="
 echo "====================="
 
 # Local manifests
-git clone mw185175/local_manifests -b Project-Blaze-15-shusky --depth=1 .repo/local_manifests
+git clone mw185175/local_manifests -b Project-Blaze-15-shusky-1 --depth=1 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
